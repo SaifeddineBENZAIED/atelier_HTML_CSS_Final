@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Inscription en licence</h1>
+    <br><br><br>
+    <fieldset>
+        <legend align="center"><h4 >Informations personnelles</h4></legend>
+    <br>
+    <form action="validform.html" method="post">
+        <div align="center"><label >Votre nom <input type="text" name="nom" placeholder="votre nom?"></label><br>
+        <label >Votre prenom <input type="text" name="prenom" placeholder="votre prenom?"></label><br>
+        <label >Votre age <input type="text" name="age" placeholder="votre age?" maxlength="2" pattern="[0-9]{2}"></label><br>
+        <label >Votre adresse <textarea name="adresse" id="" cols="30" rows="10" placeholder="Votre adresse?"></textarea></label><br>
+        <label >Mot de passe <input type="password" name="mdp" id="" required></label><br>
+        <label >Retapez votre mot de passe <input type="password" name="rmdp" id="" required></label><br>
+        <label align="center">Date de naissance <input type="date" name="ddn" id=""></label><br>
+        <label align="center">Votre email <input type="email" name="email" id=""></label><br>
+        <label align="center">URL <input type="url" name="url" id=""></label><br>
+        </div>
+        <br>
+    </fieldset>
+    <br><fieldset>
+        <legend align="center"><h4 > Gestion des groupes et des options</h4></legend>
+        <br>
+        <div align="center">
+        <label align="center">Votre groupe: <input type="radio" name="gr" id="">Groupe 1 &nbsp;<input type="radio" name="gr" id="">Groupe 2 &nbsp;<input type="radio" name="gr" id="">Groupe 3</label><br>
+        <label align="center">Numero de carte d'etudiant <input type="text" name="nce" placeholder="Numero de carte d'etudiant?" maxlength="7"></label><br>
+        <label align="center">Choisissez les options que vous desirez : <select name="option" id="">
+            <option value="" selected>choisissez</option>
+            <option value="j2ee">J2ee</option>
+            <option value="android">Android</option>
+            <option value="net">Net</option>
+            <option value="html5">HTML5</option>
+            <option value="flex">Flex</option>
+        </select></label><br>
+        <label align="center">Code de verification <input type="text" name="cv" pattern="[I][N][S][A][T][0-9]{4}"></label><br>
+    </fieldset>
+        <div align="center"><input type="submit" value="valider"> &nbsp;<input type="reset" value="reinntialiser"></div><br>
+    </div>
+    </form>
+</body>
+</html>
